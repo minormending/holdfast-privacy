@@ -8,16 +8,18 @@
 </head>
 <body>
 <h1>Holdfast privacy policy</h1>
-<p>For the Holdfast Android app (package com.emblemcards.game), version 0.1.0. Last updated: November 5, 2026.</p>
-<p>Holdfast is a single-player card game that plays entirely offline. There is no account, advertising, analytics, crash reporting or tracking. The app has no internet permission and asks for no access to your data, so it cannot send your information to us or to anyone else.</p>
+<p>For the Holdfast Android app (package com.emblemcards.game), version 0.1.1 and later. Last updated: November 6, 2026.</p>
+<p>Holdfast is a single-player card game that plays entirely offline. There is no account, advertising, analytics or tracking, and the app asks for no access to your data. Since version 0.1.1 the app uses the internet for one thing: when you open it while online, it checks for and downloads game updates (new code, content and art) so they can arrive without a Play Store update. The game works the same without a connection.</p>
+<h2>Game updates</h2>
+<p>Updates come from Expo's EAS Update service, which hosts them for us. Each check is an HTTPS request that carries facts about the installed build (the platform, app version, update channel and the IDs of the updates it has), a random identifier the update library creates for this installation, and, if the app failed to start after an update, the text of that error and the IDs of the updates that failed. Like any internet request it also reveals your device's IP address. The installation identifier is not derived from your device, your Google account or any advertising ID, and is used to choose which installations receive a staged update. Expo stores these request records as our service provider, under <a href="https://expo.dev/privacy">Expo's privacy policy</a>; we use them only to deliver updates, to count how many installations run each update and to see whether an update caused problems. Nothing about your games, your saves or you personally is sent.</p>
 <h2>What stays on your device</h2>
-<p>Holdfast saves the battle you are playing so you can quit and resume it. That save holds only game state: the board, your hand and deck, and the turn. It is kept in the app's local storage on your device and is never transmitted. Android's own backup may include it if you have device backup turned on.</p>
+<p>Holdfast saves the battle you are playing so you can quit and resume it, and remembers whether you have finished the tutorial. That save holds only game state: the board, your hand and deck, and the turn. It is kept in the app's local storage on your device and is never transmitted. Android's own backup may include it if you have device backup turned on.</p>
 <h2>What we do not collect</h2>
-<p>Holdfast does not collect your name, email, contacts, location, photos, device identifiers, advertising ID or any other personal information. It contains no third-party SDKs for ads or analytics.</p>
+<p>Holdfast does not collect your name, email, contacts, location, photos, hardware device identifiers, advertising ID or any other personal information. It contains no third-party SDKs for ads or analytics. The only data that leaves your device is the update check described above.</p>
 <h2>Children</h2>
-<p>Holdfast does not collect personal information from anyone, children included.</p>
+<p>Holdfast does not collect personal information from anyone, children included. The update check described above works the same way for every player.</p>
 <h2>Your choices and deletion</h2>
-<p>To delete the saved battle, finish or quit it from the menu, clear Holdfast's storage in Android settings, or uninstall the app. There is no online account or server copy to delete.</p>
+<p>To delete the saved battle, finish it, clear Holdfast's storage in Android settings, or uninstall the app. There is no online account or server copy of your game to delete. Clearing storage or reinstalling also replaces the update library's installation identifier with a new one. To ask for update request records to be deleted, write to the address below.</p>
 <h2>Earlier versions</h2>
 <p>Holdfast replaces Emblem Cards, an earlier prototype released under the same package. Emblem Cards had an optional online mode that sent a random player ID, a display name and game moves to a server the player chose. Holdfast has no online mode.</p>
 <h2>Changes</h2>
